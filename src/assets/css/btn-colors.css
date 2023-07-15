@@ -1,0 +1,291 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: #19376D;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #19376D;
+    color: white;
+  }
+  
+  .btn.large {
+    font-size: 20px;
+  }
+  
+  .btn.small {
+    font-size: 14px;
+  }
+  
+  .btn.btn-primary {
+    background-color: #19376D;
+    color: white;
+  }
+  
+  .btn.btn-prest {
+    background-color: #576CBC;
+    color: white;
+  }
+  
+  .btn.btn-black {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn.btn-gray {
+    background-color: gray;
+    color: white;
+  }
+  
+  .btn.btn-green {
+    background-color: green;
+    color: white;
+  }
+  
+  .btn.btn-blue {
+    background-color: blue;
+    color: white;
+  }
+  
+  .btn.btn-dark-blue {
+    background-color: #002147;
+    color: white;
+  }
+  
+  .btn.btn-light-blue {
+    background-color: #ADD8E6;
+    color: #19376D;
+  }
+  
+  .btn.btn-yellow {
+    background-color: yellow;
+    color: #19376D;
+  }
+  
+  .btn.btn-orange {
+    background-color: orange;
+    color: white;
+  }
+  
+  .btn.btn-purple {
+    background-color: purple;
+    color: white;
+  }
+  
+  .btn.btn-pink {
+    background-color: pink;
+    color: white;
+  }
+  
+  .btn.btn-brown {
+    background-color: brown;
+    color: white;
+  }
+  
+  .btn.btn-cyan {
+    background-color: cyan;
+    color: black;
+  }
+  
+  .btn.btn-teal {
+    background-color: teal;
+    color: white;
+  }
+  
+  .btn.btn-lavender {
+    background-color: lavender;
+    color: #19376D;
+  }
+  
+  .btn.btn-magenta {
+    background-color: magenta;
+    color: white;
+  }
+  
+  .btn.btn-navy {
+    background-color: navy;
+    color: white;
+  }
+  
+  .btn.btn-olive {
+    background-color: olive;
+    color: white;
+  }
+  
+  .btn.btn-silver {
+    background-color: silver;
+    color: #19376D;
+  }
+  
+  .btn.btn-maroon {
+    background-color: maroon;
+    color: white;
+  }
+  
+  .btn.btn-gold {
+    background-color: gold;
+    color: #19376D;
+  }
+  
+  .btn.btn-indigo {
+    background-color: indigo;
+    color: white;
+  }
+  
+  .btn.btn-lime {
+    background-color: lime;
+    color: black;
+  }
+  
+  .btn.btn-orchid {
+    background-color: orchid;
+    color: white;
+  }
+  
+  .btn.btn-salmon {
+    background-color: salmon;
+    color: white;
+  }
+  
+  .btn.btn-slate {
+    background-color: slate;
+    color: white;
+  }
+  
+  .btn.btn-turquoise {
+    background-color: turquoise;
+    color: black;
+  }
+  
+  .btn.btn-wheat {
+    background-color: wheat;
+    color: #19376D;
+  }
+  
+  .btn.btn-steelblue {
+    background-color: steelblue;
+    color: white;
+  }
+  
+  .btn.btn-crimson {
+    background-color: crimson;
+    color: white;
+  }
+  
+  .btn.btn-firebrick {
+    background-color: firebrick;
+    color: white;
+  }
+  
+  .btn.btn-lawn-green {
+    background-color: lawnGreen;
+    color: black;
+  }
+  
+  .btn.btn-dark-slate-gray {
+    background-color: darkslategray;
+    color: white;
+  }
+  
+  .btn.btn-hot-pink {
+    background-color: hotpink;
+    color: white;
+  }
+  
+  .btn.btn-royal-blue {
+    background-color: royalblue;
+    color: white;
+  }
+  
+  .btn.btn-forest-green {
+    background-color: forestgreen;
+    color: white;
+  }
+  
+  .btn.btn-tomato {
+    background-color: tomato;
+    color: white;
+  }
+  
+  .btn.btn-gainsboro {
+    background-color: gainsboro;
+    color: #19376D;
+  }
+  
+  .btn.btn-plum {
+    background-color: plum;
+    color: #19376D;
+  }
+  
+  .btn.btn-coral {
+    background-color: coral;
+    color: white;
+  }
+  
+  .btn.btn-moccasin {
+    background-color: moccasin;
+    color: #19376D;
+  }
+  
+  .btn.btn-dark-khaki {
+    background-color: darkkhaki;
+    color: #19376D;
+  }
+  
+  .btn.btn-sandy-brown {
+    background-color: sandybrown;
+    color: white;
+  }
+  
+  .btn.btn-dark-orchid {
+    background-color: darkorchid;
+    color: white;
+  }
+  
+  .btn.btn-cadet-blue {
+    background-color: cadetblue;
+    color: white;
+  }
+  
+  .btn.btn-medium-sea-green {
+    background-color: mediumseagreen;
+    color: white;
+  }
+  
+  .btn.btn-pale-violet-red {
+    background-color: palevioletred;
+    color: white;
+  }
+  
+  .btn.btn-sienna {
+    background-color: sienna;
+    color: white;
+  }
+  
+  .btn.btn-dark-cyan {
+    background-color: darkcyan;
+    color: white;
+  }
+  
+  .btn.btn-medium-purple {
+    background-color: mediumpurple;
+    color: white;
+  }
+  
+  .btn.btn-rosy-brown {
+    background-color: rosybrown;
+    color: white;
+  }
+  
+  .btn.btn-indian-red {
+    background-color: indianred;
+    color: white;
+  }
+  

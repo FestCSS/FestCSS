@@ -1,0 +1,28 @@
+{
+  "name": "wiiuexploit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "html-minifier": "^4.0.0",
+    "http-proxy-middleware": "^2.0.6",
+    "koa": "^2.14.2",
+    "koa-html-minifier": "^3.0.0",
+    "koa-minify": "^2.0.1",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.1.0",
+    "vue-server-renderer": "^2.7.14"
+  },
+  "devDependencies": {
+    "terser": "^5.19.0"
+  }
+}
