@@ -1,9 +1,10 @@
+const fs = require('fs');
+const path = require('path');
 const Koa = require('koa');
 const Router = require('koa-router');
 const views = require('koa-views');
-const path = require('path');
 const koaStatic = require('koa-static');
-const { minify } = require('html-minifier');
+const { minify: minifyHTML } = require('html-minifier');
 
 const app = new Koa();
 const router = new Router();
@@ -22,23 +23,25 @@ app.use(koaStatic(path.join(__dirname, 'assets')));
 // Minify HTML middleware
 app.use(async (ctx, next) => {
   await next();
-  if (ctx.response.type === 'text/html') {
-    ctx.response.body = minify(ctx.response.body, {
+  if (ctx.response.type === 'text/html' && ctx.response.body) {
+    ctx.response.body = minifyHTML(ctx.response.body, {
       collapseWhitespace: true,
       removeComments: true,
     });
   }
 });
 
-// Enable koa-minify middleware for JavaScript files
-// (Keep the existing code for JavaScript minification)
-
-// Define your routes here
-const index = require('./routes/index');
-router.use('/', index.routes());
+// Read files and set up routes dynamically
+const pagesDir = path.join(__dirname, 'views/pages');
+fs.readdirSync(pagesDir).forEach(file => {
+  const route = file === 'index.ejs' ? '/' : `/${path.basename(file, '.ejs')}`;
+  router.get(route, async (ctx) => {
+    await ctx.render(path.join('pages', path.basename(file, '.ejs')));
+  });
+});
 
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(port, () => {
-  console.log(`Server is running on port localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
